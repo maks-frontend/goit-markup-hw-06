@@ -19,9 +19,22 @@ img {
     height: auto;
 }
 .container {
-    padding: 0 15px 0 15px;
-    width: 1158px;
-    margin: 0 auto;
+    max-width: 288px;
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 736px;
+    }
+}
+@media screen and (min-width: 1188px) {
+    .container {
+        padding: 0 15px 0 15px;
+        max-width: 1158px;
+    }
 }
 .wrap {
     margin: 0 auto;
@@ -638,6 +651,9 @@ ul {
 }
 .link-modal  {
     color: #4d5ae5;
+}
+.hide {
+    display: none;
 }
 .button-end {
     margin: auto;
