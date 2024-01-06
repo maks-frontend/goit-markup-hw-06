@@ -474,7 +474,7 @@ ul {
    
     align-items: baseline;
 }
-@media onle screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     .footer-box-logo {
         margin-right: 120px;
     }
@@ -516,6 +516,12 @@ ul {
 }
 @media only screen and (min-width: 768px) {
     .footer-form-mail {
+      
+    
+    }
+}
+@media only screen and (min-width: 1158px) {
+    .footer-form-mail {
         margin-left: 80px;
     }
 }
@@ -532,6 +538,7 @@ ul {
     color: #ffffff;
 }
 .mail { 
+    margin-bottom: 16px;
     color: #ffffff;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -545,7 +552,6 @@ ul {
     width: 264px;
 }
 .form-button {
-    margin-top: 16px;
     border-radius: 4px;
     border: none;
     background-color: #4D5AE5;
