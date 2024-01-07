@@ -16,7 +16,6 @@ li {
 img {
     display: block;
     max-width: 100%;
-    height: auto;
 }
 .container {
     max-width: 320px;
@@ -50,6 +49,8 @@ img {
     padding: 188px 0;
 }
 .wrap-icon {
+    border-radius: 4px;
+    border: 1px #8E8F99 solid;
     margin-bottom: 8px;
     border-radius: 4px;
     background-color: #f4f4fd;
@@ -57,6 +58,11 @@ img {
     justify-content: center;
     align-items: center;
     display: flex;
+}
+@media only screen and (max-width: 1157px) {
+    .wrap-icon {
+        display: none;
+    }
 }
 .header-box {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -235,13 +241,21 @@ ul {
     background-color: #404BBF;
 }
 .cards {
+    
    padding: 120px 0;
 }
+@media only screen and (min-width: 1158px) {
+    .cards {
+        margin-left: 156px;
+    }
+}
 .cards-advent {
+    gap: 24px;
     flex-wrap: wrap;
     display: flex;
 }
 .cards-description {
+    
     width: 100%;
     gap: 72px;
 }
@@ -253,10 +267,12 @@ ul {
 
 @media only screen and (min-width: 1158px) {
     .cards-description {
+        
         width: calc((100% - 72px) / 5);
     }
 }
 .subtitle {
+    
     margin-bottom: 8px;
     color: #2e2f42;
     font-weight: 500;
@@ -264,6 +280,12 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     word-wrap: break-word;
+}
+@media only screen and (max-width: 767.98px) {
+    .subtitle {
+    justify-content: center;
+    display: flex;
+    }
 }
 .section-team {
     padding-bottom: 96px;
@@ -306,7 +328,7 @@ ul {
 
 }
 .people {
-    gap: 72px;
+   margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -365,6 +387,7 @@ ul {
     word-wrap: break-word;
 }
 .text-team {
+    margin-bottom: 8px;
     text-align: center;
 }
 .sect-portfolio {
