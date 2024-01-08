@@ -92,7 +92,6 @@ img {
     }
 }
 .head-contacts {
-    margin-left: 120px;
     gap: 40px;
     padding: 24px 0;
 }
@@ -146,7 +145,7 @@ a {
     border-radius: 2px;
     background-color: #404bbf;
     height: 4px;
-    bottom: -1px;
+    bottom: -20px;
     left: 0;
     position: absolute;
     content: '';
@@ -200,10 +199,6 @@ ul {
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
             overflow: hidden;
-}
-.title-div {
-
-    
 }
 .title {
     margin-right: auto;
@@ -328,6 +323,7 @@ ul {
 
 }
 .people {
+   
    margin-bottom: 72px;
     margin-left: auto;
     margin-right: auto;
@@ -337,9 +333,12 @@ ul {
     background-color: white;
     border-radius: 0px 0px 4px 4px;
 }
+.people img {
+border: 1px black solid;
+}
 @media only screen and (min-width: 768px) {
     .people {
-        width: calc((100% - 64px) / 2);
+        width: 264px;
     }
 }
 @media only screen and (min-width: 1158px) {
@@ -523,9 +522,11 @@ ul {
 @media only screen and (min-width: 768px) {
     .footer-box {
         align-items: baseline;
+        flex-wrap: wrap;
             display: flex;
     }
 }
+
 .footer-title {
     color: #ffffff;
     letter-spacing: 0.02em;
@@ -534,18 +535,10 @@ ul {
     font-weight: 500;
     margin-bottom: 16px;
 }
-.footer-form-mail {
 
-}
-@media only screen and (min-width: 768px) {
-    .footer-form-mail {
-      
-    
-    }
-}
 @media only screen and (min-width: 1158px) {
     .footer-form-mail {
-        margin-left: 80px;
+        margin-left: 60px;
     }
 }
 .form-footer {
@@ -594,9 +587,6 @@ ul {
         justify-content: center;
         display: flex;
     }
-}
-.button-icon {
-    margin-left: 16px;
 }
 .footer-socials {
     margin-bottom: 16px;
@@ -647,6 +637,11 @@ ul {
     top: 0;
     position: fixed;
 }
+@media only screen and (max-width: 767.98px) {
+    .modal-container {
+        width: 100%;
+    }
+}
 .modal-window {
     padding: 72px 24px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -655,12 +650,18 @@ ul {
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     background: #fcfcfc;
-    min-height: 584px;
-    width: 408px;
+    height: 623px;
+    width: 288px;
     transform: translate(-50%, -50%) scale(1);
     left: 50%;
     top: 50%;
     position: absolute;
+}
+@media only screen and (min-width: 768px) {
+    .modal-window {
+        height: 584px;
+        width: 408px;
+    }
 }
 .button-modal {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
