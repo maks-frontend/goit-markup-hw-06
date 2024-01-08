@@ -598,7 +598,6 @@ border: 1px black solid;
 }
 .footer-list {
     margin-bottom: 72px;
-    margin-left: 16px;
     gap: 16px;
     display: flex;
 }
